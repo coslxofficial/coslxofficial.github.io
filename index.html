@@ -2,10 +2,109 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>coslxofficial | Web Sitesi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSLX | Türkçe Çeviri & APK Portfolyosu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            color: #38bdf8;
+            margin-bottom: 5px;
+        }
+        header p {
+            color: #94a3b8;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+            border: 1px solid #334155;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #f1f5f9;
+        }
+        .tag {
+            background-color: #0284c7;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .description {
+            color: #cbd5e1;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .download-btn {
+            display: block;
+            text-align: center;
+            background-color: #22c55e;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.2s;
+        }
+        .download-btn:hover {
+            background-color: #16a34a;
+        }
+    </style>
 </head>
 <body>
-    <h1>Kişisel Web Siteme Hoş Geldiniz!</h1>
-    <p>GitHub Pages kullanarak ilk sitemi başarıyla kurdum.</p>
+
+    <header>
+        <h1>COSLX TRANSLATION & LAB</h1>
+        <p>Kendi çevirdiğim ve düzenlediğim Türkçe APK oyunlar ve uygulamalar.</p>
+    </header>
+
+    <div class="portfolio-container">
+        
+        <!-- ÖRNEK OYUN KARTI 1 -->
+        <div class="card">
+            <span class="tag">Türkçe Yama / APK</span>
+            <h2>Örnek Oyun Adı 1</h2>
+            <p class="description">Bu oyunun tüm arayüzü, hikayesi ve diyalogları tarafımdan tamamen Türkçe'ye çevrilmiştir. Kurulum için direkt APK'yı indirmeniz yeterlidir.</p>
+            <a href="#" class="download-btn">Güvenli İndir (APK)</a>
+        </div>
+
+        <!-- ÖRNEK OYUN KARTI 2 -->
+        <div class="card">
+            <span class="tag">Uygulama Mod / Çeviri</span>
+            <h2>Örnek Uygulama Adı 2</h2>
+            <p class="description">Popüler fotoğraf düzenleme uygulamasının en güncel sürümü Türkçe dil desteği eklenerek yeniden paketlenmiştir.</p>
+            <a href="#" class="download-btn">Güvenli İndir (APK)</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
